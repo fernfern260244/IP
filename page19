@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>เพิ่มลดจำนวนสินค้า</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Home.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 5.2.4, nicepage.com">
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/default-logo.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+  </head>
+  <body data-home-page="Home.html" data-home-page-title="Home" class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-header" id="sec-354f"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="https://nicepage.com" class="u-image u-logo u-image-1">
+          <!-- <img src="images/default-logo.png" class="u-logo-image u-logo-image-1"> -->
+        </a>
+      </div></header>
+    <section class="u-clearfix u-section-1" id="sec-1017">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-align-center u-form u-form-1">
+          <form action="https://forms.nicepagesrv.com/Form/Process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form" style="padding: 10px;">
+            <div class="u-form-group u-form-name">
+              <label for="name-4c86" class="u-label">Name</label>
+              <input type="text" placeholder="Enter your Name" id="name-4c86" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+            </div>
+            <img class="u-form-group u-form-image u-image u-image-1" src="1.1.jpg" height="270" width="340" >
+            <div class="u-form-group u-form-message">
+              <label for="message-4c86" class="u-label">รายละเอียดสินค้า</label>
+              <textarea rows="4" cols="50" id="message-4c86" name="message" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required=""></textarea>
+            </div>
+            <div class="u-form-group u-form-select u-form-group-4">
+              <label for="select-0623" class="u-label">หมวดหมู่</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-0623" name="select" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                  <option value="บ้านและสวน">บ้านและสวน</option>
+                  <option value="โทรศัพท์">โทรศัพท์</option>
+                  <option value="พระเครื่อง">พระเครื่อง</option>
+                  <option value="นาฬิกา">นาฬิกา</option>
+                  <option value="รองเท้า">รองเท้า</option>
+                  <option value="กล้อง">กล้อง</option>
+                  <option value="กระเป๋า">กระเป๋า</option>
+                </select>
+                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+              </div>
+            </div>
+            <div class="u-form-group u-form-select u-form-group-5">
+              <label for="select-ca94" class="u-label">สีสินค้า</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-ca94" name="select-1" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                  <option value="แดง">แดง</option>
+                  <option value="ดำ">ดำ</option>
+                  <option value="เหลือง">เหลือง</option>
+                  <option value="เขียว">เขียว</option>
+                  <option value="น้ำเงิน">น้ำเงิน</option>
+                  <option value="ฟ้า">ฟ้า</option>
+                  <option value="ม่วง">ม่วง</option>
+                  <option value="ชมพู">ชมพู</option>
+                  <option value="ส้ม">ส้ม</option>
+                  <option value="ขาว">ขาว</option>
+                </select>
+                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+              </div>
+            </div>
+            <div class="u-form-group u-form-radiobutton u-form-group-6">
+              <label class="u-label">ขนาด</label>
+              <div class="u-form-radio-button-wrapper">
+                <div class="u-input-row">
+                  <input type="radio" name="radiobutton" value="เล็ก">
+                  <label class="u-label" for="radiobutton">เล็ก</label>
+                </div>
+                <div class="u-input-row">
+                  <input type="radio" name="radiobutton" value="กลาง">
+                  <label class="u-label" for="radiobutton">กลาง</label>
+                </div>
+                <div class="u-input-row">
+                  <input type="radio" name="radiobutton" value="ใหญ่">
+                  <label class="u-label" for="radiobutton">ใหญ่</label>
+                </div>
+              </div>
+            </div>
+            <div class="u-form-group u-form-group-7">
+              <label for="text-ae55" class="u-label">สภาพสินค้า</label>
+              <input type="text" placeholder="" id="text-ae55" name="text-1" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+            </div>
+            <div class="u-form-group u-form-phone u-form-group-8">
+              <label for="phone-ee10" class="u-label">เบอร์โทรศัพท์</label>
+              <input type="tel" placeholder="Enter your phone " id="phone-ee10" name="phone" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+            </div>
+            <div class="u-form-address u-form-group u-form-group-9">
+              <label for="address-9273" class="u-label">ที่อยู่</label>
+              <input type="text" placeholder="Enter your address" id="address-9273" name="address" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+            </div>
+            <p class="u-form-group u-form-text u-text u-text-1">ค่าจัดส่ง</p>
+            <div class="u-form-group u-form-group-11">
+              <label for="text-3cab" class="u-label">กว้าง(cm)</label>
+              <input type="text" placeholder="" id="text-3cab" name="text" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+            </div>
+            <div class="u-form-group u-form-group-12">
+              <label for="text-93f9" class="u-label">ยาว(cm)</label>
+              <input type="text" placeholder="" id="text-93f9" name="text-2" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+            </div>
+            <div class="u-form-group u-form-group-13">
+              <label for="text-9fc8" class="u-label">สูง(cm)</label>
+              <input type="text" placeholder="" id="text-9fc8" name="text-3" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+            </div>
+            <div class="u-align-center u-form-group u-form-submit">
+              <input type="submit" value="เพิ่มสินค้า" class="u-form-control-hidden">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-section-2" id="sec-58ff">
+      <div class="u-clearfix u-sheet u-valign-top u-sheet-1">
+        <div class="u-form u-form-1">
+          <form action="https://forms.nicepagesrv.com/Form/Process" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 15px;" source="email" name="form">
+            <div class="u-form-group u-form-select u-label-top u-form-group-1">
+              <label for="select-7430" class="u-label">สินค้าของคุณ</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-7430" name="select" class="u-border-1 u-border-grey-30 u-input u-input-rectangle" size="5">
+                  <option value="สินค้า 1">สินค้า 1</option>
+                  <option value="สินค้า 2">สินค้า 2</option>
+                  <option value="สินค้า 3">สินค้า 3</option>
+                </select>
+                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+              </div>
+            </div>
+            <div class="u-align-left u-form-group u-form-submit u-label-top u-form-group-2">
+              <input type="submit" value="ลบรายการสินค้า" class="u-form-control-hidden">
+            </div>
+            
+          </form>
+        </div>
+      </div>
+    </section>
+
+</body></html>
