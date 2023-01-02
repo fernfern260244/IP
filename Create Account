@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+</head>
+<body>
+    <div class="container"> 
+        <div class="card">
+            <div class="container-label">
+                <h1>Welcome</h1>
+                <h4>to</h4>
+                <h2>2MTrade</h2>
+
+                <button>Sing in</button>
+                <span></span></div>
+
+            <div class="container-icon">
+                <div class="circle"><i class="bi bi-chevron-right"></i></div>
+
+            </div>
+        
+        </div>
+
+        <div class="container-form">
+            <form action="">
+                <label for="Name">Frist Name</label>  <input for="text" id="Frist Name" 
+                placeholder="Frist Name" autofocus/><br><br>
+
+                <label for="Name">Last Name</label>  <input for="text" id="Last Name" 
+                placeholder="Last Name" autofocus/><br><br>
+
+                <label for="Name">User Name</label>  <input for="text" id="User Name" 
+                placeholder="User name" autofocus/><br><br>
+
+                <label for="email">E-mail</label>
+                <input for="text" id="email" 
+                placeholder="email" autofocus/><br><br>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" 
+                placeholder="password"/><br>
+
+                <div class="change-password"> <a href="">Forget your password?</a></div><br>
+
+                <button type="submit">CREATE</button>
+            </form>
+        </div>
+      
+    </div>
+    
+</body>
+</html>
