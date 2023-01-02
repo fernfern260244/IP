@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-form">
+            <form action="">
+                <label for="email">E-mail</label>
+                <input for="text" id="email" 
+                placeholder="Digite o seu email" autofocus/><br><br>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" 
+                placeholder="Digite a sua Semha"/>
+
+                <div class="change-password"> <a href="">Forget your password?</a></div><br>
+
+                <button type="submit">Enter</button>
+            </form>
+        </div>
+        <div class="card">
+            <div class="container-label">
+                <h1>Welcome</h1>
+                <h4>to</h4>
+                <h2>2MTrade</h2>
+
+                <button>Create Account</button>
+                <span></span></div>
+
+            <div class="container-icon">
+                <div class="circle"><i class="bi bi-chevron-right"></i></div>
+
+            </div>
+        
+        </div>
+    </div>
+    
+</body>
+</html>
