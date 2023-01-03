@@ -1,0 +1,44 @@
+<html>
+    <head><title>ยืนยันการชำระเงิน</title></head>
+    <body>
+        <h2>2MTrade&nbsp;&nbsp;&nbsp;ยืนยันการชำระเงิน &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img src="https://e7.pngegg.com/pngimages/998/466/png-clipart-computer-icons-people-logo-logo-black-thumbnail.png" width="50" height="50"></h2>
+        <form>
+            <div>
+                <label for="name">ชื่อ : </label>
+                <input type="text" name="name"
+                    placeholder="กรุณาใส่ชื่อ" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="numberphone">เบอร์โทรศัพท์ : </label>
+                <input type="text" name="numberphone"
+                    placeholder="กรุณาใส่เบอร์โทรศัพท์" required>
+            </div>
+            <div>
+                <label for="passorder">รหัสการสั่งซื้อ : </label>
+                <input type="text" name="passorder"
+                    placeholder="กรุณาใส่รหัสการสั่งซื้อ" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="pay">จำนวนเงิน : </label>
+                <input type="text" name="pay"
+                    placeholder="กรุณาใส่จำนวนเงิน" required>
+            </div>
+                        <div>
+                <label for="bank">ธนาคารที่ใช้โอนเงิน : </label>
+                <select name="bank" id="">
+                    <option value="กรุงเทพ">กรุงเทพ</option>
+					<option value="กรุงไทย">กรุงไทย</option>
+                </select>
+            </div>
+            <div>
+                <label for="date">วันที่โอน : </label>
+                <input type="date" name="date"required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="time">เวลาที่โอน : </label>
+                <input type="time" name="time" required>
+            </div>
+            <div>
+                <label for="slip">หลักฐานการโฉน : </label>
+                <input type="file">
+                
+            </div>
+            <input type="submit" value="ยืนยันการชำระเงิน">
+        </form>
+    </body>
+</html>
