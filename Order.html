@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<title>การสั่งซื้อ</title>
+	</head>
+	<body>
+
+		<form>
+			<div>
+				<h2>2MTrade&nbsp;&nbsp;&nbsp;การสั่งซื้อ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<label for="sinka"></label>
+					<input type="text" name="hasinka"
+						placeholder="ป้อนชื่อสินค้าที่ต้องการค้นหา">&nbsp;&nbsp;&nbsp;
+					<input type="button" value="ค้นหา">&nbsp;&nbsp;&nbsp;
+					<img src="https://e7.pngegg.com/pngimages/998/466/png-clipart-computer-icons-people-logo-logo-black-thumbnail.png" width="50" height="50">
+				</h2>
+			</div>
+			<div>
+
+				<label for="ที่อยู่การจัดส่ง">ที่อยู่การจัดส่ง</label>
+				<textarea name="" cols="30" rows="5" placeholder="ป้อนที่อยู่การจัดส่ง"></textarea>
+			</div>
+			<div>
+				<label for="ชื่อร้าน"></label>
+				<input type="checkbox" name="ชื่อร้าน">ชื่อร้าน
+			</div>
+			<div>
+				<label for="ชื่อสินค้า"></label>
+				<input type="checkbox" name="ชื่อสินค้า">ชื่อสินค้าชื้นที่ 1
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;999$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จำนวน<label
+					for="จำนวน"></label>
+				<input type="text" name="จำนวน"
+					placeholder="ระบุจำนวนที่ต้องการซื้อ">&nbsp;&nbsp;&nbsp;
+				<input type="button" value="ลบสินค้า"><br>
+				<input type="checkbox" name="ชื่อสินค้า">ชื่อสินค้าชื้นที่ 2
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;999$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จำนวน<label
+					for="จำนวน"></label>
+				<input type="text" name="จำนวน"
+					placeholder="ระบุจำนวนที่ต้องการซื้อ">&nbsp;&nbsp;&nbsp;
+				<input type="button" value="ลบสินค้า"><br>
+			</div>
+			<div>
+				<label for="โค้ดส่วนลด">โค้ดส่วนลด&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<select name="โค้ดส่วนลด" id="">
+					<option value="โค้ดสวนลด 10 บาท">โค้ดสวนลด 10 บาท</option>
+					<option value="โค้ดสวนลด 100 บาท">โค้ดสวนลด 100 บาท</option>
+				</select>
+			</div>
+			<div>
+				<label for="ตัวเลือกการขนส่ง">ตัวเลือกการขนส่ง&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<select name="ตัวเลือกการขนส่ง" id="">
+					<option value="kerry">kerry</option>
+					<option value="flash">flash</option>
+				</select>
+			</div>
+			<div>
+				<label for="วิธีการชำระเงิน"><h2>วิธีการชำระเงิน</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<table>
+					<tr>
+						<th><input type="button" value="Qr Code"><br>
+							<input type="button" value="โอนเงินผ่านธนาคาร"><br>
+							<input type="button" value="เก็บเงินปลายทาง"></th>
+						<th>ข้อมูลการชำระเงิน<br></th>
+					</tr>
+				</table>
+			</div>
+			<div>
+				ยอดรวมสินค้า &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;999 บาท<br>
+				ส่วนลด
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;999
+				บาท<br>
+				ค่าขนส่ง
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;999
+				บาท<br>
+				ยอดรวมทั้งหมด &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;999 บาท
+				<input type="submit" value="สั่งซื้อ">
+			</div>
+		</form>
+	</body>
+</html>
