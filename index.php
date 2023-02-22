@@ -13,26 +13,26 @@
    <nav class="py-0 bg-amber-700 shadow-lg ">
     <div class="container mx-auto px-2 flex justify-between ">
         <div class="pr-20  ">
-            <a href="indext.html"><img class="image" src="images/logo.png" style="height: 80px;width: 80px;" ></a>
+            <a href="index.php"><img class="image" src="images/logo.png" style="height: 80px;width: 80px;" ></a>
         </div>
         <div class=" flex flex-row space-x-4">
             
             <div class="flex-none gap-2 pt-6  ">
                 <div class="form-control ">
-                    <input type=s"text" placeholder="Search" class="input input-bordered rounded-lg pl-3 " />
+                    <input type="text" placeholder="Search" class="input input-bordered rounded-lg pl-3 " />
                 </div>
             </div>
        
             <div class="flex flex-row">
                 <div><span><a href=""><img src="images/01.png" style="width: 40px;height: 50px;" class="pl-2   pt-6"></a></span></div>
                 <div><span><a href="alert.html"><img src="images/help.png"style="width: 60px;height: 50px;" class="pl-6  pt-6"></a></span></div>
-                <div><span><a href="shoppingCart.html"><img src="images/shop.png" style="width: 50px;height: 50px;"class="pl-6  pt-6"></a></span></div>
+                <div><span><a href="shoppingCart.php"><img src="images/shop.png" style="width: 50px;height: 50px;"class="pl-6  pt-6"></a></span></div>
                 <div><span><a href=""><img src="images/chat.png"style="width: 50px;height: 50px;" class="pl-6  pt-6 "></a></span></div>
             </div>
             
              <div class="pt-6 pl-5 row-end-4">
-                <button class="rounded-md bg-amber-600 shadow-inner shadow-lg " ><a href="createAccount.html">Create Account</a> </button>
-                <button class="rounded-md bg-amber-600 shadow-inner shadow-lg "><a href="signIn.html"> Sign in</a></button>
+                <button class="rounded-md bg-amber-600 shadow-inner shadow-lg " ><a href="createAccount.php">Create Account</a> </button>
+                <button class="rounded-md bg-amber-600 shadow-inner shadow-lg "><a href="signIn.php"> Sign in</a></button>
             </div>
             <div>
                 <div><span><a href=""><img src="images/pro.png" style="width: 30px;height: 50px;" class="  pt-6"></a></span></div>
@@ -73,6 +73,7 @@
         <option value="">อุปกรณ์เครื่องเขียน</option>
         <option value="">ของใช้ทารก</option>
         <option value="">เครื่องประดับ</option>
+        <option value="">เสื้อผ้า</option>
       </select>
 
       <div class="flex flex-col-reverse  w-40 ml-16 mt-96">
@@ -87,7 +88,7 @@
   
    <div class="bg-amber-200 mt-5 w-56 h-60 rounded-t-lg shadow-inner">
     <div class="bg-slate-300 rounded-t-lg ">
-      <a href="seeProduct.html"><img class="w-56 h-52 rounded-t-lg" src="images/กระเป๋า.jpg" alt=""></a>
+      <a href="seeProduct.php"><img class="w-56 h-52 rounded-t-lg" src="images\Celine-Mini-Ava-in-Tromphe-Canvas-and-Calfskin-Tan-Shoulder-Bag.jpg" alt=""></a>
     </div>
     <div class="bg-slate-800 h-14 rounded-b-lg flex flex-row ">
       <button class="bg-gray-200 h-14 w-28 rounded-bl-lg"><img style="width: 30px;height: 30px;" class="ml-10" src="images/chat2.png" alt=""></button>
