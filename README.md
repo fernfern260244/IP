@@ -1,3 +1,3 @@
 # 2MTrade
-# IP
-# Project internet programming class 
+IP
+Project internet programming class 
