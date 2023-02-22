@@ -1,4 +1,8 @@
-<?php include('server.php'); ?>
+<?php
+    session_start();
+    include('server.php'); 
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,9 +21,20 @@
             <h1 class="text-orange-200 flex justify-center  pb-3 font-bold" style="font-size: 50px;">2MTrade</h1>
         
             <div class="flex justify-center mt-64">
-                <button class="rounded-md bg-orange-200 hover:bg-orange-100 text-amber-700  hover:text-black" style="width: 150px;height: 50px; font-size: 20px; font-bold" onclick="window.location.href='index.php'">Sign in</button>
+                <button class="rounded-md bg-orange-200 hover:bg-orange-100 text-amber-700  hover:text-black" style="width: 150px;height: 50px; font-size: 20px; font-bold" onclick="window.location.href='SignIn.php'">Sign in</button>
             </div>
         </div>
+        <form action="createAccount_db.php" method="post">
+            <?php if (isset($_SESSION['error'])) : ?>
+                <div class="error">
+                    <h3>
+                        <?php 
+                            echo $_SESSION['error'];
+                            unset($_SESSION['error']);
+                        ?>
+                    </h3>
+                </div>
+            <?php endif ?>
         <div class="bg-orange-200 rounded-r-lg " style="width: 500px; height: 600px;">
             <h1 class="text-orange-900 flex justify-center pt-10 pb-10 font-bold" style="font-size: 50px;">Create Account</h1>
             <div class=" ml-24">
@@ -49,7 +64,7 @@
                 <div class="mr-3"><a href=""><img src="images/icons8-line-50.png" alt=""></a></div>
             </div>
             <div class="flex justify-center">
-                <button class="rounded-md bg-amber-900 hover:bg-amber-700 text-white hover:text-black " style="width: 150px;height: 50px; font-size: 20px; font-bold"onclick="window.location.href='SignIn.php'">Create Account</button>
+                <button class="rounded-md bg-amber-900 hover:bg-amber-700 text-white hover:text-black " style="width: 150px;height: 50px; font-size: 20px; font-bold">Create Account</button>
             </div>
         </div>
        
