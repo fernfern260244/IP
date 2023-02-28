@@ -4,46 +4,51 @@
 
     $errors = array();
 
-    if (isset($_POST['createAccount'])) {
+    if (isset($_POST['submit'])) {
         $username = mysqli_real_escape_string($conn, $_POST['username']);
         $email = mysqli_real_escape_string($conn, $_POST['email']);
-        $password = mysqli_real_escape_string($conn, $_POST['password']);
+        $password_1 = mysqli_real_escape_string($conn, $_POST['password_1']);
+        // $password_2 = mysqli_real_escape_string($conn, $_POST['password_2']);
 
         if (empty($username)) {
             array_push($errors, "Username is required");
         }
-
         if (empty($email)) {
             array_push($errors, "Email is required");
         }
-
-        if (empty($password)) {
+        if (empty($password_1)) {
             array_push($errors, "Password is required");
         }
+        // if ($password_1 != $password_2) {
+        //     array_push($errors, "The two passwords do not match");
+        // }
 
-        if (count($errors) == 0) {
-            $password = md5($password);
-            $query = "SELECT * FROM user WHERE username = '$username' AND email = '$email' AND password = '$password' ";
-            $result = mysqli_query($conn, $query);
+        $user_check_query = "SELECT * FROM member WHERE member_name = '$username' OR member_email = '$email'";
+        $query = mysqli_query($conn, $user_check_query);
+        $result = mysqli_fetch_assoc($query);
 
-            if (mysqli_num_rows($result) == 1) {
-                $_SESSION['username'] = $username;
-                $_SESSION['success'] = "Your are now logged in";
-                header("location: index.php");
-            if (mysqli_num_rows($result) == 1) {
-                $_SESSION['email'] = $email;
-                $_SESSION['success'] = "Your are now logged in";
-                header("location: index.php");
-            } else {
-                array_push($errors, "Wrong Username or Password");
-                $_SESSION['error'] = "Wrong Username or Password!";
-                header("location: login.php");
+        if ($result) {
+            if ($result['member_name'] === $username) {
+                array_push($errors, "Username already exists");
             }
-        } else {
-            array_push($errors, "Username & email & Password is required");
-            $_SESSION['error'] = "Username  & email & Password is required";
-            header("location: createAccount.php");
+            if ($result['member_email'] === $email) {
+                array_push($errors, "Email already exists");
+            }
+            
+            $_SESSION['unsuccess'] = "This username e-mail already exists.";
+            header('location: createAccount.php');
         }
+        
+        if (count($errors) == 0) {
+            // $password = md5($password_1);
+
+            $sql = "INSERT INTO member (member_name, member_email, member_password) VALUES ('$username', '$email', '$password_1')";
+            mysqli_query($conn, $sql);
+
+            $_SESSION['username'] = $username;
+            $_SESSION['success'] = "You are now logged in";
+            header('location: index.php');
+        } 
     }
 
 ?>

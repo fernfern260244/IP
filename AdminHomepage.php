@@ -16,16 +16,16 @@
     </div>
     <div class= "bg-orange-200 w-auto  flex  text-center text-xl ">
         <div class="p-5 flex-1 grid grid-cols-1 justify-items-center " >
-            <a href="checkgoods.html">ตรวจสอบสินค้า</a>
-            <a href="checkgoods.html"><img src="img/check.png" class="m-2" width="40" height="40"></a>
+            <a href="checkgoods.php">ตรวจสอบสินค้า</a>
+            <a href="checkgoods.php"><img src="img/check.png" class="m-2" width="40" height="40"></a>
         </div>
         <div class="p-5 flex-1 bg-amber-700 grid grid-cols-1 justify-items-center">
-            <a href="checkshop.html">ตรวจลงทะเบียนร้านค้า</a>
-            <a href="checkshop.html"><img src="img/edit.png" class="m-2" width="40" height="40"></a>
+            <a href="checkshop.php">ตรวจลงทะเบียนร้านค้า</a>
+            <a href="checkshop.php"><img src="img/edit.png" class="m-2" width="40" height="40"></a>
         </div>
         <div class="p-5  flex-1 grid grid-cols-1 justify-items-center">
-            <a href="checkreport.html">ตรวจสอบการรายงาน</a>
-            <a href="checkreport.html"><img src="img/document.png" class="m-2" width="40" height="40"></a>
+            <a href="checkreport.php">ตรวจสอบการรายงาน</a>
+            <a href="checkreport.php"><img src="img/document.png" class="m-2" width="40" height="40"></a>
         </div>
 
     </div>

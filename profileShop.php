@@ -12,7 +12,7 @@
     <nav class="py-0 bg-amber-700 shadow-lg ">
         <div class="container mx-auto px-2 flex justify-between ">
             <div class="pr-20  ">
-                <a href="indext.html"><img class="image" src="images/logo.png" style="height: 80px;width: 80px;" ></a>
+                <a href="index.php"><img class="image" src="images/logo.png" style="height: 80px;width: 80px;" ></a>
             </div>
             <div class=" flex flex-row space-x-4">  
                 

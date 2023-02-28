@@ -1,18 +1,18 @@
-<?php include('server.php'); ?>
+<?php include 'server.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <title>ลงทะเบียนสินค้า</title>
+    <link rel="stylesheet" href="style.css">
+    <title>ลงทะเบียนร้านค้า</title>
 </head>
 <body class="bg-amber-500">
     <nav class="py-0 bg-amber-700 shadow-lg ">
         <div class="container mx-auto px-2 flex justify-between ">
             <div class="pr-20  ">
-                <a href="indext.html"><img class="image" src="images/logo.png" style="height: 80px;width: 80px;" ></a>
+                <a href="index.php"><img class="image" src="images/logo.png" style="height: 80px;width: 80px;" ></a>
             </div>
             <div class=" flex flex-row space-x-4">
                 
@@ -41,55 +41,36 @@
         </div>
        </nav>
 <section class="max-w-4xl p-6 mx-auto rounded-md shadow-md bg-orange-200 mt-20">
-    <h1 class="text-xl font-bold text-white capitalize dark:text-white">ลงทะเบียนสินค้า</h1>
-    <form>
-        <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
+    <h1 class="text-xl font-bold text-white capitalize dark:text-white">ลงทะเบียนร้านค้า</h1>
+    <form action="registerStore_db.php" method = "POST">
+        <div class="grid grid-row-1 gap-6 mt-4 ">
             <div>
                 <label class=" text-black" for="username">ชื่อร้านค้า </label>
-                <input id="username" type="text" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md  dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
+                <input name = "name" id="username" type="text" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md  dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
             </div>
 
-            <div>
+            <!--<div>
                 <label class=" text-black" for="emailAddress">Email</label>
                 <input id="emailAddress" type="email" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md  dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
             </div>
 
             <div>
                 <label class=" text-black" for="password">ชื่อสินค้า</label>
-                <input id="password" type="password" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md  dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
-            </div>
-
-            <div>
-                <label class=" text-black" for="passwordConfirmation">ชื้อ-นามสกุล ผู้ขาย </label>
-                <input id="passwordConfirmation" type="password" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md  dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
-            </div>
+                <input id="nameproduct" type="password" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md  dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
+            </div>-->
             <div>
                 <label class=" text-black" for="passwordConfirmation">ที่อยู่</label>
-                <input type="text" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md  dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
+                <textarea name = "address" id="address" type="textarea" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md  dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring"></textarea>
             </div>
-            <div>
-                <label class=" text-black" for="passwordConfirmation">จังหวัด </label>
-                <select class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md  dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
-                    <option>Phisanulok</option>
-                    <option>Thailand</option>
-                    <option>Bankok</option>
-                </select>
-            </div>
-            <div>
-                <label class=" text-black" for="passwordConfirmation">ขนาดสินค้า</label>
-                <input type="text" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md  dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
-            </div>
-            <div>
+
+            <!--<div>
                 <label class=" text-black" for="passwordConfirmation">วันเกิด</label>
-                <input id="date" type="date" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md  dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
-            </div>
-            <div>
-                <label class=" text-black" for="passwordConfirmation">รายละเอียดสินค้า</label>
-                <textarea id="textarea" type="textarea" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md  dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring"></textarea>
-            </div>
+                <input id="birthday" type="date" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md  dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
+            </div>-->
+            
             <div>
                 <label class="block text-sm font-medium text-black">
-                รูปสินค้า 
+                บัตรประชาชน  
               </label>
               <div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-black border-dashed rounded-md">
                 <div class="space-y-1 text-center">
@@ -99,9 +80,9 @@
                   <div class="flex text-sm text-gray-600">
                     <label for="file-upload" class="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
                       <span class="">Upload a file</span>
-                      <input id="file-upload" name="file-upload" type="file" class="sr-only">
+                      <input id="file-upload" name="storeimage" type="file" class="sr-only">
                     </label>
-                    <p class="pl-1 text-white">or drag and drop</p>
+                    <p class="pl-1 text-white">แนบรูปบัตรประชาชน</p>
                   </div>
                   <p class="text-xs text-white">
                     PNG, JPG, GIF up to 10MB
@@ -112,7 +93,7 @@
         </div>
 
         <div class="flex justify-end mt-6">
-            <button class="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-green-500 rounded-md hover:bg-pink-700 focus:outline-none focus:bg-gray-600">Save</button>
+            <button name = "reg_store" class="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-green-500 rounded-md hover:bg-pink-700 focus:outline-none focus:bg-gray-600">Save</button>
         </div>
     </form>
 </section>

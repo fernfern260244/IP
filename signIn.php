@@ -1,4 +1,7 @@
-<?php include('server.php'); ?>
+<?php 
+    session_start();    
+    include('server.php'); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,20 +13,33 @@
 </head>
 <body>
     <div class="bg-neutral-500  ml-56 mt-20  shadow-inner rounded-md flex flex-row drop-shadow-lg" style="width: 1000px;height: 600px;">
+       <form action="signIn_db.php" method="post">
         <div class="bg-orange-200 rounded-l-lg " style="width: 500px; height: 600px;">
             <h1 class="text-orange-900 flex justify-center pt-10 pb-10 font-bold" style="font-size: 50px;">Sign in</h1>
             <div class="mb-2 ml-24">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
                     E-mail
                   </label>
-                  <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" style="width: 320px;" id="E-mail" type="text" placeholder="E-mail">   
+                  <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" style="width: 320px;" id="E-mail" type="text" placeholder="E-mail" required name="email">   
             </div>
             <br>
             <div class="mb-2 ml-24">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
                     Password
                   </label>
-                  <input class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" style="width: 320px;"  id="password" type="password" placeholder="******************">                <br>
+                  <input class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" style="width: 320px;"  id="password" type="password" placeholder="******************" required name="password">                <br>
+            </div>
+            <div class="flex justify-center" style="color: red;">
+                <?php if (isset($_SESSION['Unsuccess'])) : ?>
+                    <div class="Unsuccess">
+                        <h4>
+                            <?php 
+                                echo $_SESSION['Unsuccess'];
+                                unset($_SESSION['Unsuccess']);                            
+                            ?>
+                        </h4>
+                    </div>
+                <?php endif ?>
             </div>
             <a href="#" class="flex justify-center text-slate-600">Forget your Password?</a>
             <div class="flex flex-row justify-center mt-20 mb-7">
@@ -32,9 +48,10 @@
                 <div class="mr-3"><a href=""><img src="images/icons8-line-50.png" alt=""></a></div>
             </div>
             <div class="flex justify-center">
-                <button class="rounded-md bg-amber-900 hover:bg-amber-700 text-white hover:text-black " style="width: 150px;height: 50px; font-size: 20px; font-bold">Sign in</button>
+                <button class="rounded-md bg-amber-900 hover:bg-amber-700 text-white hover:text-black " type="submit" name="signin" style="width: 150px;height: 50px; font-size: 20px; font-bold">Sign in</button>
             </div>
         </div>
+       </form>
        
         <div class="bg-amber-700 rounded-r-lg" style="width: 500px; height: 600px;">
             <h1 class="text-orange-200 flex justify-center pt-10  font-bold" style="font-size: 60px;">Welcome</h1>
@@ -42,7 +59,7 @@
             <h1 class="text-orange-200 flex justify-center  pb-3 font-bold" style="font-size: 50px;">2MTrade</h1>
         
             <div class="flex justify-center mt-64">
-                <button class="rounded-md bg-orange-200 hover:bg-orange-100 text-amber-700  hover:text-black" style="width: 150px;height: 50px; font-size: 20px; font-bold" onclick="window.location.href='createAccount.html'">Create Account</button></button>
+                <button class="rounded-md bg-orange-200 hover:bg-orange-100 text-amber-700  hover:text-black" style="width: 150px;height: 50px; font-size: 20px; font-bold" onclick="window.location.href='createAccount.php'">Create Account</button></button>
             </div>
         </div>
     </div>
